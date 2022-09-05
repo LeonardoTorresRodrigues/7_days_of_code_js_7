@@ -4,7 +4,7 @@ while (calcular != false) {
   let escolha = prompt("Qual opção você deseja: 'soma', 'subtração', 'multiplicação', 'divisão' ou deseja 'sair'?");
 
   switch (escolha) {
-    case 'soma':
+    case "soma":
       soma();
       break;
     case 'subtração':
@@ -13,7 +13,7 @@ while (calcular != false) {
     case 'multiplicação':
       multiplicacao();
       break;
-    case 'divisao':
+    case 'divisão':
       divisao();
       break;
     case 'sair':
@@ -26,25 +26,33 @@ while (calcular != false) {
   }
 }
 
-function soma(n1,n2) {
+function soma() {
+  let n1 = Math.floor(prompt("Primeiro número: "));
+  let n2 = Math.floor(prompt("Segundo número: "));
   let resultadoSoma = (n1 + n2);
-  return resultadoSoma;
+  alert(`O resultado foi ${resultadoSoma}`);
 }
-function subtracao(n1,n2) {
+function subtracao() {
+  let n1 = Math.floor(prompt("Primeiro número: "));
+  let n2 = Math.floor(prompt("Segundo número: "));
   let resultadoSubtracao = (n1 - n2);
-  return resultadoSubtracao;
+  alert(`O resultado foi ${resultadoSubtracao}`);
 }
 
-function multiplicacao(n1,n2) {
+function multiplicacao() {
+  let n1 = Math.floor(prompt("Primeiro número: "));
+  let n2 = Math.floor(prompt("Segundo número: "));
   let resultadoMultiplicacao = (n1 * n2);
-  return resultadoMultiplicacao;
+  alert(`O resultado foi ${resultadoMultiplicacao}`);
 }
 
-function divisao(n1,n2) {
+function divisao() {
+  let n1 = Math.floor(prompt("Primeiro número: "));
+  let n2 = Math.floor(prompt("Segundo número: "));
   let resultadoDivisao = (n1 / n2);
-  return resultadoDivisao;
+  alert(`O resultado foi ${resultadoDivisao}`);
 }
 
 function sair() {
-  alert("Até a próxima!")
+  alert("Até a próxima!");
 }
